@@ -120,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = (
+    os.path.join(BASE_DIR, 'media') #pasta media para abrigar as imagens dos livros
+)
+MEDIA_URL = '/media/'

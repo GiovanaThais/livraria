@@ -8,7 +8,8 @@ class Livros(models.Model):
     status = models.CharField("status", max_length=80)
     paginas= models.IntegerField()
     companhia= models.CharField("companhia", max_length=80)
-    #data_criacao= models.DataTimeField(auto_now_add=True)
+    #data_criacao= models.DataField(auto_now_add=True)
+    foto = models.ImageField(upload_to='images/', blank=True, null=True)
 
     def __str__(self):
         return self.titulo
